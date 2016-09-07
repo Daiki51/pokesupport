@@ -38,6 +38,7 @@ kangaskhan_data = {
 
 
 def main():
+    # 起動オプションを取得
     parser = argparse.ArgumentParser()
     parser.add_argument('--target', type=str, default=None)
     args = parser.parse_args()
