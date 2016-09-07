@@ -42,7 +42,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--target', type=str, default=None)
     args = parser.parse_args()
-
+    # データベースに接続
     client = pymongo.MongoClient('localhost', 27017)
     db = client["pokemon"]
     pokemon_name = args.target or "レジロック"
